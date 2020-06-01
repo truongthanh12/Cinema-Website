@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Title Film</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-md bg-faded justify-content-center">
+        <a href="/" class="navbar-brand d-flex w-50 mr-auto"><i class="fab fa-vuejs fa-2x"></i></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+            <ul class="navbar-nav w-100 justify-content-center" id="center-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#movie-list">Lich chieu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#theater">Cum rap</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#news">Tin tuc</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#application">Ung dung</a>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav ml-auto w-100 justify-content-end" id="right-nav">
+                <li class="nav-item avatar">
+                    <a class="nav-link">
+                        <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg"
+                            class="rounded-circle z-depth-0 mr-2" alt="avatar image" />Dang nhap
+                    </a>
+                </li>
+
+                <li style="border-right: 1px solid rgb(243, 238, 238);"></li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle mt-1" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Ho Chi Minh
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-default"
+                        aria-labelledby="navbarDropdownMenuLink-333">
+                        <a class="dropdown-item" href="#">Da Nang</a>
+                        <a class="dropdown-item" href="#">Ha Noi</a>
+                        <a class="dropdown-item" href="#">Hai Phong</a>
+                        <a class="dropdown-item" href="#">Da Nang</a>
+                        <a class="dropdown-item" href="#">Ha Noi</a>
+                        <a class="dropdown-item" href="#">Hai Phong</a>
+                        <a class="dropdown-item" href="#">Da Nang</a>
+                        <a class="dropdown-item" href="#">Ha Noi</a>
+                        <a class="dropdown-item" href="#">Hai Phong</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="Detail-Movie">
+        <div class="image-container-detail">
+            <img src="../img/phim-so1.jpg" id="main-img-detail" />
+            <div class="container">
+                <div class="text-detail">
+                    <div class="row">
+                        <div class="col-6 col-md-3 col-xs-3 col-sm-6 ">
+                            <img src="../img/phim-so1.jpg" alt="" />
+                            <div class="play-video">
+                                <i id="playVideo" class="far fa-play-circle fa-3x"></i>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 col-xs-3 col-sm-6 text-detail-movie">
+                            <p>20.05.2020</p>
+                            <div class="title-film-detail">
+                                <h5><span style="background-color: #18ac05;">P</span> Bay Linh Hon - DreamKatcher</h5>
+                            </div>
+                            <p>84 phut - 3.8 IMBd - 2D/Digital</p>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="detail-film pt-4" id="detail-film" style="margin-right: unset;">
+        <div class="container">
+            <div class="nav nav-tab nav-pills" role="tablist">
+
+                <a class="nav-item nav-link active" id="date-show-film" data-toggle="tab" role="tab"
+                    aria-controls="nav-home" aria-selected="true" href="#thongtin"> Thong tin</a>
+                <a class="nav-item nav-link" id="date-show-film" data-toggle="tab" role="tab" aria-controls="nav-home"
+                    aria-selected="false" href="#danhgia">Danh gia</a>
+
+            </div>
+            <div class="tab-content">
+
+                <div id="thongtin" class="tab-pane fade show active" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class="info-detail-film">
+                        <div class="row py-4">
+                            <div class="col-2 col-md-2 col-xs-3 col-sm-4 title-p-detail">
+                                <p>Ngay cong chieu</p>
+                                <p>Dao dien</p>
+                                <p>Dien vien</p>
+                                <p>THe loai</p>
+                                <p>Dinh dang</p>
+                                <p>Quoc gia</p>
+                            </div>
+                            <div class="col-4 col-md-4 col-xs-3 col-sm-8">
+                                <p>29.05.202</p>
+                                <p>Walt Dohrn, David P. Smith</p>
+                                <p>Justin Timberlake, Anna Kendrick</p>
+                                <p>Hoạt hình, Phiêu lưu, Hài hước</p>
+                                <p>2D/Digital</p>
+                                <p>Mỹ</p>
+                            </div>
+                            <div class="col-6 col-md-6 col-xs-6 col-sm-12 title-p-content-detail">
+                                <p>Noi dung</p>
+                                <span>Tiếp nối phần trước, Quỷ lùn tinh nghịch: Chuyến lưu diễn thế giới đưa người xem
+                                    trở lại thế giới
+                                    Trolls cùng Poppy, cô
+                                    quỷ lùn vui vẻ nhất từng được biết tới. Qua lời kể của “già làng” King Peppy, nguồn
+                                    gốc của vương quốc
+                                    Trolls dần được
+                                    hé lộ. Từ rất xưa tổ tiên trolls đã tạo ra cây đàn thần 6 dây, mỗi dây ứng với một
+                                    thể loại nhạc khác
+                                    nhau gồm pop, đồng
+                                    quê - country, funk, techno, cổ điển và rock.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="danhgia" class="tab-pane fade" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class="rate-detail-film py-4">
+                        <div class="container-detail-rate">
+                            <div class="row">
+                                <div class="col-6">
+                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg"
+                                        class="rounded-circle z-depth-0 mr-2" alt="avatar image"
+                                        style="width: 30px; height: 30px;" />
+                                    <span>Ban
+                                        nghi gi ve bo phim nay</span>
+
+                                </div>
+                                <div class="col-6 d-flex justify-content-end" style="align-items: center;">
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-detail-rate my-4">
+                            <div class="row">
+                                <div class="col-6">
+                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg"
+                                        class="rounded-circle z-depth-0 mr-2" alt="avatar image"
+                                        style="width: 30px; height: 30px;" />
+                                    <span>Yen Nhi</span>
+
+
+                                </div>
+                                <div class="col-6 d-flex justify-content-end" style="align-items: center;">
+                                    <span>10 diem</span>
+                                </div>
+
+                            </div>
+                            <div class="content-comment py-4">Phim tuyet lam nha</div>
+                            <div><i class="far fa-thumbs-up"></i> <span>0</span></div>
+                        </div>
+                        <div class="container-detail-rate my-4">
+                            <div class="row">
+                                <div class="col-6">
+                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg"
+                                        class="rounded-circle z-depth-0 mr-2" alt="avatar image"
+                                        style="width: 30px; height: 30px;" />
+                                    <span>Yen Nhi</span>
+                                </div>
+                                <div class="col-6 d-flex justify-content-end" style="align-items: center;">
+                                    <span>10 diem</span>
+                                </div>
+                            </div>
+                            <div class="content-comment py-4">Phim tuyet lam nha</div>
+                            <div><i class="far fa-thumbs-up"></i> <span>0</span>
+                                <i class="far fa-comment-alt"></i> <span>0</span></div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="footer-partner pt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-md-2 col-xs-2 col-sm-6 unnecessary">
+                    <h5>TIX</h5>
+                    <div class="pt-2">
+                        <a href="">FAQ</a>
+                        <div>
+                            <a href="">Brand Guidelines</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2 col-xs-2 col-sm-6 pt-4 text-left-partner">
+                    <a href="">Thỏa thuận sử dụng</a>
+                    <div>
+                        <a href="">Chính sách bảo mật</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-xs-4 col-sm-6 partner-logo">
+                    <h5>ĐỐI TÁC</h5>
+                    <div>
+                        <img src="../img/partner/cgv.jpg" alt="" />
+                        <img src="../img/partner/cgv.jpg" alt="" />
+                        <img src="../img/partner/cgv.jpg" alt="" />
+                        <img src="../img/partner/cgv.jpg" alt="" />
+                        <img src="../img/partner/cgv.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../img/partner/galaxy.png" alt="" />
+                        <img src="../img/partner/galaxy.png" alt="" />
+                        <img src="../img/partner/galaxy.png" alt="" />
+                        <img src="../img/partner/galaxy.png" alt="" />
+                        <img src="../img/partner/galaxy.png" alt="" />
+                    </div>
+                    <div>
+                        <img src="../img/partner/BHDStar.png" alt="" />
+                        <img src="../img/partner/BHDStar.png" alt="" />
+                        <img src="../img/partner/BHDStar.png" alt="" />
+                        <img src="../img/partner/BHDStar.png" alt="" />
+                        <img src="../img/partner/BHDStar.png" alt="" />
+                    </div>
+                    <img src="../img/partner/lotte.png" alt="" />
+                    <img src="../img/partner/lotte.png" alt="" />
+                    <img src="../img/partner/lotte.png" alt="" />
+                    <img src="../img/partner/lotte.png" alt="" />
+                    <img src="../img/partner/lotte.png" alt="" />
+                </div>
+                <div class="col-6 col-md-2 col-xs-2 col-sm-6 mobile">
+                    <h5 class="pb-2">MOBILE APP</h5>
+                    <i class="fab fa-apple fa-2x"></i>
+                    <i class="fas fa-robot fa-2x"></i>
+                </div>
+                <div class="col-6 col-md-2 col-xs-2 col-sm-6 social">
+                    <h5 class="pb-2 pl-3">SOCIAL</h5>
+                    <i class="fab fa-facebook fa-2x"></i>
+                    <i class="fas fa-ad fa-2x"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer-brand">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-1 col-xs-1 col-sm-12">
+                    <img src="../img/partner/galaxy.png" alt="" />
+                </div>
+                <div class="col-12 col-md-8 col-xs-8 col-sm-12 content-footer-brand">
+                    <h5>TIX – SẢN PHẨM CỦA CÔNG TY CỔ PHẦN ZION</h5>
+                    <p>
+                        Địa chỉ: Z06 Đường số 13, Phường Tân Thuận Đông, Quận 7, Tp. Hồ
+                        Chí Minh, Việt Nam.
+                    </p>
+                    <p>Giấy chứng nhận đăng ký kinh doanh số: 0101659783,</p>
+                    <p>
+                        đăng ký thay đổi lần thứ 30, ngày 22 tháng 01 năm 2020 do Sở kế
+                        hoạch và đầu tư Thành phố Hồ Chí Minh cấp.
+                    </p>
+                    <p>Số Điện Thoại (Hotline): 1900 545 436</p>
+                    <p>
+                        Email: <span><a href="">support@tix.vn</a> </span>
+                    </p>
+                </div>
+                <div class="col-12 col-md-3 col-xs-3 col-sm-12 img-info">
+                    <img src="https://s3img.vcdn.vn/123phim/2020/03/d1e6bd560daa9e20131ea8a0f62e87f8.png" alt="" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

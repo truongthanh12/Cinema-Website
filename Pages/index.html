@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tix.vn</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../css/font-awesome.min.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+  <nav class="navbar navbar-light navbar-expand-md bg-faded justify-content-center">
+    <a href="/" class="navbar-brand d-flex w-50 mr-auto"><i class="fab fa-vuejs fa-2x"></i></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+      <ul class="navbar-nav w-100 justify-content-center" id="center-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#movie-list">Lich chieu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#theater">Cum rap</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#news">Tin tuc</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#application">Ung dung</a>
+        </li>
+      </ul>
+
+      <ul class="nav navbar-nav ml-auto w-100 justify-content-end" id="right-nav">
+        <li class="nav-item avatar">
+          <a class="nav-link">
+            <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg" class="rounded-circle z-depth-0 mr-2"
+              alt="avatar image" />Dang nhap
+          </a>
+        </li>
+
+        <li style="border-right: 1px solid rgb(243, 238, 238);"></li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle mt-1" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Ho Chi Minh
+          </a>
+          <div class="dropdown-menu dropdown-menu-right dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
+            <a class="dropdown-item" href="#">Da Nang</a>
+            <a class="dropdown-item" href="#">Ha Noi</a>
+            <a class="dropdown-item" href="#">Hai Phong</a>
+            <a class="dropdown-item" href="#">Da Nang</a>
+            <a class="dropdown-item" href="#">Ha Noi</a>
+            <a class="dropdown-item" href="#">Hai Phong</a>
+            <a class="dropdown-item" href="#">Da Nang</a>
+            <a class="dropdown-item" href="#">Ha Noi</a>
+            <a class="dropdown-item" href="#">Hai Phong</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <section>
+    <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
+      <ol class="carousel-indicators" role="listbox">
+        <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+        <li data-target="#carousel-example-1z" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active" id="carousel-main">
+          <a href="./detail-film.html">
+            <img src="../img/phim-so1.jpg" class="d-block w-60" alt="..." />
+          </a>
+          <div class="play-video">
+            <i id="playVideo" class="far fa-play-circle fa-3x" data-toggle="modal" data-target="#exampleModal"></i>
+          </div>
+
+        </div>
+        <div class="carousel-item" id="carousel-main">
+          <a href="./detail-film.html">
+            <img src="../img/phim-so2.png" class="d-block w-60" alt="..." />
+          </a>
+          <div class="play-video">
+            <i id="playVideo" class="far fa-play-circle fa-3x" data-toggle="modal" data-target="#exampleModal"></i>
+          </div>
+
+        </div>
+        <div class="carousel-item" id="carousel-main">
+          <a href="./detail-film.html">
+            <img src="../img/phim-so3.jpg" class="d-block w-60" alt="..." />
+          </a>
+          <div class="play-video">
+            <i id="playVideo" class="far fa-play-circle fa-3x" data-toggle="modal" data-target="#exampleModal"></i>
+          </div>
+        </div>
+
+        <!--https://upload.wikimedia.org/wikipedia/commons/8/8d/Yarra_Night_Panorama%2C_Melbourne_-_Feb_2005.jpg-->
+      </div>
+
+      <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </section>
+  <section class="search-sec">
+    <div class="container">
+      <form action="#" method="post" novalidate="novalidate">
+
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-3 p-0">
+            <select class="form-control search-slt" id="exampleFormControlSelect1">
+              <option>Phim</option>
+              <option>Example one</option>
+              <option>Example one</option>
+              <option>Example one</option>
+              <option>Example one</option>
+              <option>Example one</option>
+              <option>Example one</option>
+            </select>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 p-0">
+            <select class="form-control search-slt" id="exampleFormControlSelect1">
+              <option>Rap</option>
+              <option>Example one</option>
+              <option>Example one</option>
+              <option>Example one</option>
+              <option>Example one</option>
+              <option>Example one</option>
+              <option>Example one</option>
+            </select>
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-2 p-0">
+            <select class="form-control search-slt" id="exampleFormControlSelect1">
+              <option>Ngay xem</option>
+              <option>Example one</option>
+              <option>Example one</option>
+              <option>Example one</option>
+              <option>Example one</option>
+              <option>Example one</option>
+              <option>Example one</option>
+            </select>
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-2 p-0">
+            <select class="form-control search-slt" id="exampleFormControlSelect1">
+              <option>Xuat chieu</option>
+              <option>Example one</option>
+              <option>Example one</option>
+              <option>Example one</option>
+              <option>Example one</option>
+              <option>Example one</option>
+              <option>Example one</option>
+            </select>
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-2 p-0">
+            <button type="button" class=" wrn-btn">
+              Mua Ve Ngay
+            </button>
+          </div>
+
+        </div>
+      </form>
+    </div>
+  </section>
+  <section class="movie-list py-2" id="movie-list">
+    <div class="container">
+      <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+        <div class="dangchieu">
+          <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#dangchieuphim" role="tab"
+            aria-controls="nav-home" aria-selected="true">Dang chieu</a>
+        </div>
+        <div class="sapchieu">
+          <a class="nav-item nav-link" id="nav-home-tab" data-toggle="tab" href="#sapchieuphim" role="tab"
+            aria-controls="nav-home" aria-selected="false">Sap chieu</a>
+        </div>
+      </div>
+      <div class="tab-content ">
+        <div class="tab-pane fade show active" id="dangchieuphim" role="tabpanel" aria-labelledby="nav-home-tab">
+          <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel"
+            data-interval="false">
+            <!--Controls-->
+            <div class="controls-top text-center">
+              <a id="left-list-movie-change" class="btn-floating" href="#multi-item-example" data-slide="prev"><i
+                  class="fas fa-chevron-left"></i></a>
+
+              <a id="left-list-movie-change" class="btn-floating" href="#multi-item-example" data-slide="next"><i
+                  class="fas fa-chevron-right"></i></a>
+            </div>
+
+            <div class="container">
+              <div class="carousel-inner" role="listbox">
+                <!-- Dang chieu phim //Page1 -->
+                <div class="carousel-item active">
+                  <div class="row pt-5">
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 col-xs-6">
+                      <div class="itemsContainer">
+
+                        <div class="image">
+                          <a href="detail-film.html">
+                            <img src="../img/phim-so1.jpg" />
+                          </a>
+
+                          <p>Phim nang so 3 (C16)</p>
+                          <p>1000 phut</p>
+                          <button id="limit-age" disabled>C16</button>
+                          <button id="rate-movie" disabled>
+                            <span>8.0</span></br>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"> 1/2</i>
+                          </button>
+                        </div>
+                        <div class="play">
+                          <i class="far fa-play-circle fa-3x" data-toggle="modal" data-target="#exampleModal"></i>
+                        </div>
+                        <button id="ticket" class="btn btn-danger">Mua ve ngay</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- //Page2 -->
+                <div class="carousel-item">
+                  <div class="row pt-5">
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 col-xs-6">
+                      <div class="itemsContainer">
+
+                        <div class="image">
+                          <a href="#">
+                            <img src="../img/phim-so1.jpg" />
+                          </a>
+                          <p>Phim nang so 3 (C26)</p>
+                          <p>1000 phut</p>
+                          <button id="limit-age" disabled>C16</button>
+                          <button id="rate-movie" disabled>
+                            <span>8.0</span></br>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"> 1/2</i>
+                          </button>
+                        </div>
+                        <div class="play">
+                          <i class="far fa-play-circle fa-3x"></i>
+                        </div>
+                        <button id="ticket" class="btn btn-danger">Mua ve ngay</button>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <!-- //Page3 -->
+                  <div class="row pt-5">
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 col-xs-6">
+                      <div class="itemsContainer">
+                        <div class="image">
+                          <a href="#">
+                            <img src="../img/phim-so1.jpg" />
+                          </a>
+                          <p>Phim nang so 3 (C36)</p>
+                          <p>1000 phut</p>
+                          <button id="limit-age" disabled>C16</button>
+                          <button id="rate-movie" disabled>
+                            <span>8.0</span></br>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"> 1/2</i>
+                          </button>
+                        </div>
+                        <div class="play">
+                          <i class="far fa-play-circle fa-3x"></i>
+                        </div>
+                        <button id="ticket" class="btn btn-danger">Mua ve ngay</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sap chieu -->
+        <div class="tab-pane fade" id="sapchieuphim" role="tabpanel" aria-labelledby="nav-home-tab">
+          <div id="multi-item-examplep" class="carousel slide carousel-multi-item" data-ride="carousel"
+            data-interval="false">
+            <!--Controls-->
+            <div class="controls-top text-center">
+              <a id="left-list-movie-change" class="btn-floating" href="#multi-item-examplep" data-slide="prev"><i
+                  class="fas fa-chevron-left"></i></a>
+
+              <a id="left-list-movie-change" class="btn-floating" href="#multi-item-examplep" data-slide="next"><i
+                  class="fas fa-chevron-right"></i></a>
+            </div>
+            <div class="container">
+              <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                  <div class="row pt-5">
+                    <div class="col-lg-3 col-md-6 col-sm-12 col-xs-6">
+                      <div class="itemsContainer">
+                        <div class="image">
+                          <a href="detail-film-yet-showed.html">
+                            <img src="../img/phim-so1.jpg" />
+                          </a>
+
+                          <p>Phim nang so 3 (C162)</p>
+                          <p>1000 phut</p>
+                          <button id="limit-age-yet" disabled>P</button>
+                          <button id="rate-movie-yet" disabled>
+                            <span>22/04</span>
+                          </button>
+                        </div>
+                        <div class="play">
+                          <i class="far fa-play-circle fa-3x"></i>
+                        </div>
+                        <button id="ticket" class="btn btn-danger">Mua ve ngay</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item ">
+                  <div class="row pt-5">
+                    <div class="col-lg-3 col-md-6 col-sm-12 col-xs-6">
+                      <div class="itemsContainer">
+                        <div class="image">
+                          <a href="#">
+                            <img src="../img/phim-so1.jpg" />
+                          </a>
+
+                          <p>Phim nang so 3 (C162)</p>
+                          <p>1000 phut</p>
+                          <button id="limit-age-yet" disabled>P</button>
+                          <button id="rate-movie-yet" disabled>
+                            <span>22/04</span>
+                          </button>
+                        </div>
+                        <div class="play">
+                          <i class="far fa-play-circle fa-3x"></i>
+                        </div>
+                        <button id="ticket" class="btn btn-danger">Mua ve ngay</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FreeChoose Movie to watch -->
+  <section class="free-choose my-5" id="theater">
+    <div class="container">
+      <div class="container">
+
+        <div class="row py-5">
+          <div class="col-lg-1 col-md-1 col-sm-3 col-3" id="brand">
+
+            <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+              <a class="tab-link active" id="nav-home-tab" data-toggle="tab" href="#cgv" role="tab"
+                aria-controls="nav-home" aria-selected="true"><img
+                  src="https://s3img.vcdn.vn/123phim/2018/09/ee621ee05dcd4565caead4f29421b41e.png" alt=""></a>
+              <a class="tab-link" data-toggle="tab" href="#bhd" role="tab" aria-controls="nav-profile"
+                aria-selected="false"><img
+                  src="https://s3img.vcdn.vn/123phim/2018/09/f32670fd0eb083c9c4c804f0f3a252ed.png" alt=""></a>
+              <a class="tab-link" data-toggle="tab" href="#galaxy" role="tab" aria-controls="nav-profile"
+                aria-selected="false"><img
+                  src="https://s3img.vcdn.vn/123phim/2018/09/e520781386bd5436e94d6e15e193a005.png" alt=""></a>
+              <a class="tab-link" data-toggle="tab" href="#cns" role="tab" aria-controls="nav-profile"
+                aria-selected="false"><img
+                  src="https://s3img.vcdn.vn/123phim/2018/09/1721cfa98768f300c03792e25ceb0191.png" alt=""></a>
+              <a class="tab-link" data-toggle="tab" href="#ddc" role="tab" aria-controls="nav-profile"
+                aria-selected="false"><img
+                  src="https://s3img.vcdn.vn/123phim/2018/09/9b240f96a233bb43203ee514a21a6004.png" alt=""></a>
+              <a class="tab-link" data-toggle="tab" href="#dcine" role="tab" aria-controls="nav-profile"
+                aria-selected="false"><img
+                  src="https://s3img.vcdn.vn/123phim/2018/09/7b078639bd8fdb09dd83652d207c7b90.png" alt=""></a>
+              <a class="tab-link" data-toggle="tab" href="#lotte" role="tab" aria-controls="nav-profile"
+                aria-selected="false"><img
+                  src="https://s3img.vcdn.vn/123phim/2018/09/404b8c4b80d77732e7426cdb7e24be20.png" alt=""></a>
+
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-9 col-9" id="center-choose-film">
+            <div class="overflow-auto">
+              <div class="item-1">
+                <div class="row">
+                  <div class="col-md-2 col-xs-2 col-sm-2 col-2">
+                    <img src="https://s3img.vcdn.vn/123phim/2018/09/cgv-su-van-hanh-15380173580593.jpg" alt="">
+                  </div>
+                  <div class="col-md-10 col-xs-10 col-sm-10 col-10 pt-2">
+                    <div id="cgv-text">
+                      <span id="brand-text">CGV</span> - <span>Sư Vạn Hạnh</span>
+                    </div>
+                    <div>
+                      <span id="content-text">Tang 2 lau 1 tp.ho chi minh..</span>
+                    </div>
+                    <span id="detail-text">[Chi tiet]</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item-1">
+                <div class="row">
+                  <div class="col-md-2 col-xs-2 col-sm-2 col-2">
+                    <img src="https://s3img.vcdn.vn/123phim/2018/09/cgv-su-van-hanh-15380173580593.jpg" alt=""> </div>
+                  <div class="col-md-10 col-xs-10 col-sm-10 col-10 pt-2">
+                    <div id="cgv-text">
+                      <span id="brand-text-BHD">BHD Star</span> - <span id="bhd-locate">VinCom Thao Dien</span>
+                    </div>
+                    <div>
+                      <span id="content-text">Tang 2 lau 1 tp.ho chi minh..</span>
+                    </div>
+                    <span id="detail-text">[Chi tiet]</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item-1">
+                <div class="row">
+                  <div class="col-md-2 col-xs-2 col-sm-2 col-2">
+                    <img src="https://s3img.vcdn.vn/123phim/2018/09/cgv-su-van-hanh-15380173580593.jpg" alt=""> </div>
+                  <div class="col-md-10 col-xs-10 col-sm-10 col-10 pt-2">
+                    <div id="cgv-text">
+                      <span id="brand-text-GLX">GLX</span> - <span>Nguyen Du</span>
+                    </div>
+                    <div>
+                      <span id="content-text">Tang 2 lau 1 tp.ho chi minh..</span>
+                    </div>
+                    <span id="detail-text">[Chi tiet]</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item-1">
+                <div class="row">
+                  <div class="col-md-2 col-xs-2 col-sm-2 col-2">
+                    <img src="https://s3img.vcdn.vn/123phim/2018/09/cgv-su-van-hanh-15380173580593.jpg" alt=""> </div>
+                  <div class="col-md-10 col-xs-10 col-sm-10 col-10 pt-2">
+                    <div id="cgv-text">
+                      <span id="brand-text-CNS">CNS</span> - <span>Quang Trung</span>
+                    </div>
+                    <div>
+                      <span id="content-text">Tang 2 lau 1 tp.ho chi minh..</span>
+                    </div>
+                    <span id="detail-text">[Chi tiet]</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item-1">
+                <div class="row">
+                  <div class="col-md-2 col-xs-2 col-sm-2 col-2">
+                    <img src="https://s3img.vcdn.vn/123phim/2018/09/cgv-su-van-hanh-15380173580593.jpg" alt=""> </div>
+                  <div class="col-md-10 col-xs-10 col-sm-10 col-10 pt-2">
+                    <div id="cgv-text">
+                      <span id="brand-text-DDC">DDC</span> - <span>Dong Da</span>
+                    </div>
+                    <div>
+                      <span id="content-text">Tang 2 lau 1 tp.ho chi minh..</span>
+                    </div>
+                    <span id="detail-text">[Chi tiet]</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item-1">
+                <div class="row">
+                  <div class="col-md-2 col-xs-2 col-sm-2 col-2">
+                    <img src="https://s3img.vcdn.vn/123phim/2018/09/cgv-su-van-hanh-15380173580593.jpg" alt=""> </div>
+                  <div class="col-md-10 col-xs-10 col-sm-10 col-10 pt-2">
+                    <div id="cgv-text">
+                      <span id="brand-text-DCine">DCine</span> - <span>Ben Thanh</span>
+                    </div>
+                    <div>
+                      <span id="content-text">Tang 2 lau 1 tp.ho chi minh..</span>
+                    </div>
+                    <span id="detail-text">[Chi tiet]</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item-1">
+                <div class="row">
+                  <div class="col-md-2 col-xs-2 col-sm-2 col-2">
+                    <img src="https://s3img.vcdn.vn/123phim/2018/09/cgv-su-van-hanh-15380173580593.jpg" alt=""> </div>
+                  <div class="col-md-10 col-xs-10 col-sm-10 col-10 pt-2">
+                    <div id="cgv-text">
+                      <span id="brand-text-Lotte">Lotte</span> - <span>Nam Sai Gon</span>
+                    </div>
+                    <div>
+                      <span id="content-text">Tang 2 lau 1 tp.ho chi minh..</span>
+                    </div class="detail-text">
+                    <span id="detail-text">[Chi tiet]</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item-1">
+                <div class="row">
+                  <div class="col-md-2 col-xs-2 col-sm-2 col-2">
+                    <img src="https://s3img.vcdn.vn/123phim/2018/09/cgv-su-van-hanh-15380173580593.jpg" alt=""> </div>
+                  <div class="col-md-10 col-xs-10 col-sm-10 col-10 pt-2">
+                    <div id="cgv-text">
+                      <span id="brand-text">CGV</span> - <span>Sư Vạn Hạnh</span>
+                    </div>
+                    <div>
+                      <span id="content-text">Tang 2 lau 1 tp.ho chi minh..</span>
+                    </div>
+                    <span id="detail-text">[Chi tiet]</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item-1">
+                <div class="row">
+                  <div class="col-md-2 col-xs-2 col-sm-2 col-2">
+                    <img src="https://s3img.vcdn.vn/123phim/2018/09/cgv-su-van-hanh-15380173580593.jpg" alt=""> </div>
+                  <div class="col-md-10 col-xs-10 col-sm-10 col-10 pt-2">
+                    <div id="cgv-text">
+                      <span id="brand-text">CGV</span> - <span>Sư Vạn Hạnh</span>
+                    </div>
+                    <div>
+                      <span id="content-text">Tang 2 lau 1 tp.ho chi minh..</span>
+                    </div>
+                    <span id="detail-text">[Chi tiet]</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7 col-md-7 col-sm-12" id="right-title-film">
+            <div class="overflow-auto">
+              <div class="row">
+                <div class="col-md-1 col-xs-1 col-sm-2 col-2"><img
+                    src="https://s3img.vcdn.vn/mobile/123phim/2018/09/johnny-english-tai-xuat-giang-ho-c13-15380439936252_60x60.jpg"
+                    alt="">
+                </div>
+                <div class="col-md-11 col-xs-11 col-sm-10 col-10 mt-2" id="title-film-content">
+                  <button id="limit-age-film" disabled>C16</button>
+                  <span>Giang ho tai xuat: Jonny English</span>
+                  <p>89 phut - TIX 7.7 - IMDb 6.6</p>
+                </div>
+                <div class="movie-type">
+                  <p>2D Digital</p>
+                  <button disabled>17:00 ~ 18:30</button>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-1 col-xs-1 col-sm-2 col-2"><img
+                    src="https://s3img.vcdn.vn/mobile/123phim/2018/09/johnny-english-tai-xuat-giang-ho-c13-15380439936252_60x60.jpg"
+                    alt="">
+                </div>
+                <div class="col-md-11 col-xs-11 col-sm-10 col-10 mt-2" id="title-film-content">
+                  <button id="yet-showed-film" disabled>P</button>
+                  <span>Giang ho tai xuat: Jonny English</span>
+                  <p>89 phut - TIX 7.7 - IMDb 6.6</p>
+                </div>
+                <div class="movie-type">
+                  <p>2D Digital</p>
+                  <button disabled>17:00 ~ 18:30</button>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-1 col-xs-1 col-sm-2 col-2"><img
+                    src="https://s3img.vcdn.vn/mobile/123phim/2018/09/johnny-english-tai-xuat-giang-ho-c13-15380439936252_60x60.jpg"
+                    alt="">
+                </div>
+                <div class="col-md-11 col-xs-11 col-sm-10 col-10 mt-2" id="title-film-content">
+                  <button id="limit-age-film" disabled>C16</button>
+                  <span>Giang ho tai xuat: Jonny English</span>
+                  <p>89 phut - TIX 7.7 - IMDb 6.6</p>
+                </div>
+                <div class="movie-type">
+                  <p>2D Digital</p>
+                  <button disabled>17:00 ~ 18:30</button>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-1 col-xs-1 col-sm-2 col-2"><img
+                    src="https://s3img.vcdn.vn/mobile/123phim/2018/09/johnny-english-tai-xuat-giang-ho-c13-15380439936252_60x60.jpg"
+                    alt="">
+                </div>
+                <div class="col-md-11 col-xs-11 col-sm-10 col-10 mt-2" id="title-film-content">
+                  <button id="limit-age-film" disabled>C16</button>
+                  <span>Giang ho tai xuat: Jonny English</span>
+                  <p>89 phut - TIX 7.7 - IMDb 6.6</p>
+                </div>
+                <div class="movie-type">
+                  <p>2D Digital</p>
+                  <button disabled>17:00 ~ 18:30</button>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-1 col-xs-1 col-sm-2 col-2"><img
+                    src="https://s3img.vcdn.vn/mobile/123phim/2018/09/johnny-english-tai-xuat-giang-ho-c13-15380439936252_60x60.jpg"
+                    alt="">
+                </div>
+                <div class="col-md-11 col-xs-11 col-sm-10 col-10 mt-2" id="title-film-content">
+                  <button id="limit-age-film" disabled>C16</button>
+                  <span>Giang ho tai xuat: Jonny English</span>
+                  <p>89 phut - TIX 7.7 - IMDb 6.6</p>
+                </div>
+                <div class="movie-type">
+                  <p>2D Digital</p>
+                  <button disabled>17:00 ~ 18:30</button>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-1 col-xs-1 col-sm-2 col-2"><img
+                    src="https://s3img.vcdn.vn/mobile/123phim/2018/09/johnny-english-tai-xuat-giang-ho-c13-15380439936252_60x60.jpg"
+                    alt="">
+                </div>
+                <div class="col-md-11 col-xs-11 col-sm-10 col-10 mt-2" id="title-film-content">
+                  <button id="limit-age-film" disabled>C16</button>
+                  <span>Giang ho tai xuat: Jonny English</span>
+                  <p>89 phut - TIX 7.7 - IMDb 6.6</p>
+                </div>
+                <div class="movie-type">
+                  <p>2D Digital</p>
+                  <button disabled>17:00 ~ 18:30</button>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-1 col-xs-1 col-sm-2 col-2"><img
+                    src="https://s3img.vcdn.vn/mobile/123phim/2018/09/johnny-english-tai-xuat-giang-ho-c13-15380439936252_60x60.jpg"
+                    alt="">
+                </div>
+                <div class="col-md-11 col-xs-11 col-sm-10 col-10 mt-2" id="title-film-content">
+                  <button id="limit-age-film" disabled>C16</button>
+                  <span>Giang ho tai xuat: Jonny English</span>
+                  <p>89 phut - TIX 7.7 - IMDb 6.6</p>
+                </div>
+                <div class="movie-type">
+                  <p>2D Digital</p>
+                  <button disabled>17:00 ~ 18:30</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="news" id="news">
+    <div class="container">
+      <div class="text-center title-news">
+        <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+
+          <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#dienanh" role="tab"
+            aria-controls="nav-home" aria-selected="true">Dien anh 24h</a>
+          <a class="nav-item nav-link" id="nav-home-tab" data-toggle="tab" href="#review" role="tab"
+            aria-controls="nav-home" aria-selected="false">Review</a>
+          <a class="nav-item nav-link" id="nav-home-tab" data-toggle="tab" href="#khuyenmai" role="tab"
+            aria-controls="nav-home" aria-selected="false">Khuyen mai</a>
+
+        </div>
+      </div>
+      <div class="tab-content">
+        <div class="tab-pane fade show active" id="dienanh" role="tabpanel" aria-labelledby="nav-home-tab">
+          <div class="row py-4">
+            <div class="col-md-6 col-xs-6 col-sm-6">
+              <div class="card card-main">
+                <img class="card-img-top" src="../img/phim-so2.png" alt="Card image cap">
+                <div class="card-body">
+                  <a href="">
+                    <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis, ipsam?</h5>
+                  </a>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content. Some quick example text to build on the card title and make up the bulk of the card's
+                    content.
+                  </p>
+                  <i class="far fa-thumbs-up"></i> <span>0</span>
+                  <i class="far fa-comment-alt"></i> <span>0</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-xs-6 col-sm-6">
+              <div class="card card-main">
+                <img class="card-img-top" src="../img/phim-so1.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <a href="">
+                    <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis, ipsam?</h5>
+                  </a>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content. Some quick example text to build on the card title and make up the bulk of the card's
+                    content.
+                  </p>
+                  <i class="far fa-thumbs-up"></i> <span>0</span>
+                  <i class="far fa-comment-alt"></i> <span>0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row py-1">
+            <div class="col-md-4 col-xs-4 col-sm-4">
+              <div class="card card-under">
+                <img class="card-img-top" src="../img/phim-so2.png" alt="Card image cap">
+                <div class="card-body">
+                  <a href="">
+                    <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis, ipsam?</h5>
+                  </a>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content. Some quick example text to build on the card title and make up the bulk of the card's
+                    content.
+                  </p>
+                  <i class="far fa-thumbs-up"></i> <span>0</span>
+                  <i class="far fa-comment-alt"></i> <span>0</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-xs-4 col-sm-4">
+              <div class="card card-under">
+                <img class="card-img-top" src="../img/phim-so1.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <a href="">
+                    <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis, ipsam?</h5>
+                  </a>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content. Some quick example text to build on the card title and make up the bulk of the card's
+                    content.
+                  </p>
+                  <i class="far fa-thumbs-up"></i> <span>0</span>
+                  <i class="far fa-comment-alt"></i> <span>0</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-xs-4 col-sm-4">
+              <div class="row card-right-under">
+                <div class="col-2 col-md-3 col-xs-3 col-sm-4">
+                  <img class="card-img-right"
+                    src="https://s3img.vcdn.vn/123phim/2020/05/ba-dong-lin-shaye-cua-insidious-tai-xuat-trong-phim-kinh-di-bay-linh-hon-15891841835409.png"
+                    alt="Card image cap">
+                  <img class="card-img-right"
+                    src="https://s3img.vcdn.vn/123phim/2020/05/ccfb798a0c7f7deb76fb8d718b92f406.png"
+                    alt="Card image cap">
+                  <img class="card-img-right"
+                    src="https://s3img.vcdn.vn/123phim/2020/05/batman-vs-joker-ai-tot-ai-xau-15888414648114.png"
+                    alt="Card image cap">
+                  <img class="card-img-right"
+                    src="https://s3img.vcdn.vn/123phim/2020/05/mau-sac-anh-huong-den-qua-trinh-xem-phim-cua-ban-nhu-the-nao-15887592699494.png"
+                    alt="Card image cap">
+                </div>
+                <div class="col-10 col-md-9 col-xs-9 col-sm-8 card-right-text">
+                  <a href="">
+                    <p>‘Bà đồng’ Lin Shaye của Insidious tái xuất trong phim kinh di va....</p>
+                  </a>
+                  <a href="" id="right-text">
+                    <p>‘Bà đồng’ Lin Shaye của Insidious tái xuất trong phim kinh di va....</p>
+                  </a>
+                  <a href="" id="right-text">
+                    <p>‘Bà đồng’ Lin Shaye của Insidious tái xuất trong phim kinh di va....</p>
+                  </a>
+                  <a href="" id="right-text">
+                    <p>‘Bà đồng’ Lin Shaye của Insidious tái xuất trong phim kinh di va....</p>
+                  </a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade show" id="review" role="tabpanel">
+          <div class="row py-4">
+            <div class="col-md-6 col-xs-6 col-sm-6">
+              <div class="card card-main">
+                <img class="card-img-top" src="../img/phim-so2.png" alt="Card image cap">
+                <div class="card-body">
+                  <a href="">
+                    <h5>Nam o trang review</h5>
+                  </a>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content. Some quick example text to build on the card title and make up the bulk of the card's
+                    content.
+                  </p>
+                  <i class="far fa-thumbs-up"></i> <span>0</span>
+                  <i class="far fa-comment-alt"></i> <span>0</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-xs-6 col-sm-6">
+              <div class="card card-main">
+                <img class="card-img-top" src="../img/phim-so1.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <a href="">
+                    <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis, ipsam?</h5>
+                  </a>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content. Some quick example text to build on the card title and make up the bulk of the card's
+                    content.
+                  </p>
+                  <i class="far fa-thumbs-up"></i> <span>0</span>
+                  <i class="far fa-comment-alt"></i> <span>0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row py-1">
+            <div class="col-md-4 col-xs-4 col-sm-4">
+              <div class="card card-under">
+                <img class="card-img-top" src="../img/phim-so2.png" alt="Card image cap">
+                <div class="card-body">
+                  <a href="">
+                    <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis, ipsam?</h5>
+                  </a>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content. Some quick example text to build on the card title and make up the bulk of the card's
+                    content.
+                  </p>
+                  <i class="far fa-thumbs-up"></i> <span>0</span>
+                  <i class="far fa-comment-alt"></i> <span>0</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-xs-4 col-sm-4">
+              <div class="card card-under">
+                <img class="card-img-top" src="../img/phim-so1.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <a href="">
+                    <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis, ipsam?</h5>
+                  </a>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content. Some quick example text to build on the card title and make up the bulk of the card's
+                    content.
+                  </p>
+                  <i class="far fa-thumbs-up"></i> <span>0</span>
+                  <i class="far fa-comment-alt"></i> <span>0</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-xs-4 col-sm-4">
+              <div class="row card-right-under">
+                <div class="col-2 col-md-3 col-xs-3 col-sm-4">
+                  <img class="card-img-right"
+                    src="https://s3img.vcdn.vn/123phim/2020/05/ba-dong-lin-shaye-cua-insidious-tai-xuat-trong-phim-kinh-di-bay-linh-hon-15891841835409.png"
+                    alt="Card image cap">
+                  <img class="card-img-right"
+                    src="https://s3img.vcdn.vn/123phim/2020/05/ccfb798a0c7f7deb76fb8d718b92f406.png"
+                    alt="Card image cap">
+                  <img class="card-img-right"
+                    src="https://s3img.vcdn.vn/123phim/2020/05/batman-vs-joker-ai-tot-ai-xau-15888414648114.png"
+                    alt="Card image cap">
+                  <img class="card-img-right"
+                    src="https://s3img.vcdn.vn/123phim/2020/05/mau-sac-anh-huong-den-qua-trinh-xem-phim-cua-ban-nhu-the-nao-15887592699494.png"
+                    alt="Card image cap">
+                </div>
+                <div class="col-10 col-md-9 col-xs-9 col-sm-8 card-right-text">
+                  <a href="">
+                    <p>‘Bà đồng’ Lin Shaye của Insidious tái xuất trong phim kinh di va....</p>
+                  </a>
+                  <a href="" id="right-text">
+                    <p>‘Bà đồng’ Lin Shaye của Insidious tái xuất trong phim kinh di va....</p>
+                  </a>
+                  <a href="" id="right-text">
+                    <p>‘Bà đồng’ Lin Shaye của Insidious tái xuất trong phim kinh di va....</p>
+                  </a>
+                  <a href="" id="right-text">
+                    <p>‘Bà đồng’ Lin Shaye của Insidious tái xuất trong phim kinh di va....</p>
+                  </a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade show" id="khuyenmai" role="tabpanel">
+          <div class="row py-4">
+            <div class="col-md-6 col-xs-6 col-sm-6">
+              <div class="card card-main">
+                <img class="card-img-top" src="../img/phim-so2.png" alt="Card image cap">
+                <div class="card-body">
+                  <a href="">
+                    <h5>Nam o trang khuyen mai</h5>
+                  </a>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content. Some quick example text to build on the card title and make up the bulk of the card's
+                    content.
+                  </p>
+                  <i class="far fa-thumbs-up"></i> <span>0</span>
+                  <i class="far fa-comment-alt"></i> <span>0</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-xs-6 col-sm-6">
+              <div class="card card-main">
+                <img class="card-img-top" src="../img/phim-so1.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <a href="">
+                    <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis, ipsam?</h5>
+                  </a>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content. Some quick example text to build on the card title and make up the bulk of the card's
+                    content.
+                  </p>
+                  <i class="far fa-thumbs-up"></i> <span>0</span>
+                  <i class="far fa-comment-alt"></i> <span>0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row py-1">
+            <div class="col-md-4 col-xs-4 col-sm-4">
+              <div class="card card-under">
+                <img class="card-img-top" src="../img/phim-so2.png" alt="Card image cap">
+                <div class="card-body">
+                  <a href="">
+                    <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis, ipsam?</h5>
+                  </a>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content. Some quick example text to build on the card title and make up the bulk of the card's
+                    content.
+                  </p>
+                  <i class="far fa-thumbs-up"></i> <span>0</span>
+                  <i class="far fa-comment-alt"></i> <span>0</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-xs-4 col-sm-4">
+              <div class="card card-under">
+                <img class="card-img-top" src="../img/phim-so1.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <a href="">
+                    <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis, ipsam?</h5>
+                  </a>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content. Some quick example text to build on the card title and make up the bulk of the card's
+                    content.
+                  </p>
+                  <i class="far fa-thumbs-up"></i> <span>0</span>
+                  <i class="far fa-comment-alt"></i> <span>0</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-xs-4 col-sm-4">
+              <div class="row card-right-under">
+                <div class="col-2 col-md-3 col-xs-3 col-sm-4">
+                  <img class="card-img-right"
+                    src="https://s3img.vcdn.vn/123phim/2020/05/ba-dong-lin-shaye-cua-insidious-tai-xuat-trong-phim-kinh-di-bay-linh-hon-15891841835409.png"
+                    alt="Card image cap">
+                  <img class="card-img-right"
+                    src="https://s3img.vcdn.vn/123phim/2020/05/ccfb798a0c7f7deb76fb8d718b92f406.png"
+                    alt="Card image cap">
+                  <img class="card-img-right"
+                    src="https://s3img.vcdn.vn/123phim/2020/05/batman-vs-joker-ai-tot-ai-xau-15888414648114.png"
+                    alt="Card image cap">
+                  <img class="card-img-right"
+                    src="https://s3img.vcdn.vn/123phim/2020/05/mau-sac-anh-huong-den-qua-trinh-xem-phim-cua-ban-nhu-the-nao-15887592699494.png"
+                    alt="Card image cap">
+                </div>
+                <div class="col-10 col-md-9 col-xs-9 col-sm-8 card-right-text">
+                  <a href="">
+                    <p>‘Bà đồng’ Lin Shaye của Insidious tái xuất trong phim kinh di va....</p>
+                  </a>
+                  <a href="" id="right-text">
+                    <p>‘Bà đồng’ Lin Shaye của Insidious tái xuất trong phim kinh di va....</p>
+                  </a>
+                  <a href="" id="right-text">
+                    <p>‘Bà đồng’ Lin Shaye của Insidious tái xuất trong phim kinh di va....</p>
+                  </a>
+                  <a href="" id="right-text">
+                    <p>‘Bà đồng’ Lin Shaye của Insidious tái xuất trong phim kinh di va....</p>
+                  </a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center py-4">
+      <button class="btn btn-outline-secondary text-center">Xem Them</button>
+    </div>
+  </section>
+  <section class="footer pt-4" id="application">
+    <div class="image-container">
+      <img id="image" src="../img/app-phim.jpg" />
+      <div class="text">
+        <div class="row" style="width: 100%;">
+          <div class="col-12 col-md-6 col-xs-6 col-sm-12 text-left-ft">
+            <h3>Ứng dụng tiện lợi dành cho người yêu điện ảnh</h3>
+            <p>Không chỉ đặt vé, bạn còn có thể bình luận phim, chấm điểm rạp và đổi quà hấp dẫn.</p>
+            <button class="btn">App mien phi - tai ve ngay!</button>
+            <p>Tix co 2 phien ban <a href="">iOS</a> va <a href="">Android</a></p>
+          </div>
+          <div class="col-12 col-md-6 col-xs-6 col-sm-12 text-right-ft">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+
+                  <div class="right-background">
+                    <img src="../img/app-screen.png" alt="">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="right-background">
+                    <img src="../img/screen-app1.jpg" alt="">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="right-background">
+                    <img src="../img/app-screen.png" alt="">
+                  </div>
+                </div>
+
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section class="footer-partner pt-4">
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-6 col-md-2 col-xs-2 col-sm-6 unnecessary">
+          <h5>TIX</h5>
+          <div class="pt-2">
+            <a href="">FAQ</a>
+            <div>
+              <a href="">Brand Guidelines</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 col-xs-2 col-sm-6 pt-4 text-left-partner">
+          <a href="">Thỏa thuận sử dụng</a>
+          <div>
+            <a href="">Chính sách bảo mật</a>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 col-xs-4 col-sm-6 partner-logo">
+          <h5>ĐỐI TÁC</h5>
+          <div>
+            <img src="../img/partner/cgv.jpg" alt="">
+            <img src="../img/partner/cgv.jpg" alt="">
+            <img src="../img/partner/cgv.jpg" alt="">
+            <img src="../img/partner/cgv.jpg" alt="">
+            <img src="../img/partner/cgv.jpg" alt="">
+          </div>
+          <div>
+            <img src="../img/partner/galaxy.png" alt="">
+            <img src="../img/partner/galaxy.png" alt="">
+            <img src="../img/partner/galaxy.png" alt="">
+            <img src="../img/partner/galaxy.png" alt="">
+            <img src="../img/partner/galaxy.png" alt="">
+          </div>
+          <div>
+            <img src="../img/partner/BHDStar.png" alt="">
+            <img src="../img/partner/BHDStar.png" alt="">
+            <img src="../img/partner/BHDStar.png" alt="">
+            <img src="../img/partner/BHDStar.png" alt="">
+            <img src="../img/partner/BHDStar.png" alt="">
+          </div>
+          <img src="../img/partner/lotte.png" alt="">
+          <img src="../img/partner/lotte.png" alt="">
+          <img src="../img/partner/lotte.png" alt="">
+          <img src="../img/partner/lotte.png" alt="">
+          <img src="../img/partner/lotte.png" alt="">
+        </div>
+        <div class="col-6 col-md-2 col-xs-2 col-sm-6 mobile">
+          <h5 class="pb-2">MOBILE APP</h5>
+          <i class="fab fa-apple fa-2x"></i>
+          <i class="fas fa-robot fa-2x"></i>
+        </div>
+        <div class="col-6 col-md-2 col-xs-2 col-sm-6 social">
+          <h5 class="pb-2 pl-3">SOCIAL</h5>
+          <i class="fab fa-facebook fa-2x"></i>
+          <i class="fas fa-ad fa-2x"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="footer-brand">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-1 col-xs-1 col-sm-12">
+          <img src="../img/partner/galaxy.png" alt="">
+        </div>
+        <div class="col-12 col-md-8 col-xs-8 col-sm-12 content-footer-brand">
+          <h5>TIX – SẢN PHẨM CỦA CÔNG TY CỔ PHẦN ZION</h5>
+          <p>Địa chỉ: Z06 Đường số 13, Phường Tân Thuận Đông, Quận 7, Tp. Hồ Chí Minh, Việt Nam.
+          </p>
+          <p>Giấy chứng nhận đăng ký kinh doanh số: 0101659783,
+          </p>
+          <p>đăng ký thay đổi lần thứ 30, ngày 22 tháng 01 năm 2020 do Sở kế hoạch và đầu tư Thành phố Hồ Chí Minh cấp.
+          </p>
+          <p>Số Điện Thoại (Hotline): 1900 545 436</p>
+          <p>Email: <span><a href="">support@tix.vn</a> </span> </p>
+        </div>
+        <div class="col-12 col-md-3 col-xs-3 col-sm-12 img-info">
+          <img src="https://s3img.vcdn.vn/123phim/2020/03/d1e6bd560daa9e20131ea8a0f62e87f8.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="modal fade pt-5" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+
+        <div class="modal-body">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe width="560" height="515" src="https://www.youtube.com/embed/1P18z1hYNqw" frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
